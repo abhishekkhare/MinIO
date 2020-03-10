@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "a75ea50c-5dd6-4f77-820e-68202124dcdb",
+		"name": "Minio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/khaab05/Desktop/Screen Shot 2020-03-04 at 1.54.43 PM.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/abhishek/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/khaab05/Desktop/runscope_log.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/abhishek/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"abhishek",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/createbucket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "abhishek",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/createbucket",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"createbucket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/buckets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/buckets",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"buckets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/download?file=Screen Shot 2020-03-04 at 1.54.43 PM.png",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/download?file=Screen Shot 2020-03-04 at 1.54.43 PM.png",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"download"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "Screen Shot 2020-03-04 at 1.54.43 PM.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/abhishek/download?file=runscope_log.txt",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/abhishek/download?file=runscope_log.txt",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"abhishek",
+						"download"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "runscope_log.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/delete?file=Screen Shot 2020-03-04 at 1.54.43 PM.png",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/delete?file=Screen Shot 2020-03-04 at 1.54.43 PM.png",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "Screen Shot 2020-03-04 at 1.54.43 PM.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/abhishek/delete?file=runscope_log.txt",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/abhishek/delete?file=runscope_log.txt",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"abhishek",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "runscope_log.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/deletebucket?bucket=abhishek",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/deletebucket?bucket=abhishek",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"deletebucket"
+					],
+					"query": [
+						{
+							"key": "bucket",
+							"value": "abhishek"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
